@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase
         DiaryListItem::class,
         NoteItem::class,
         AddItem::class,
-    ], version = 1
+    ], version = 1, exportSchema = false
 )
 abstract class MainDB : RoomDatabase() {
     abstract fun diaryListItemDao(): DiaryListItemDao
